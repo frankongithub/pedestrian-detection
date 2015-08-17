@@ -1,4 +1,5 @@
-Pedestrian detection in still images.
+Pedestrian detection in still images
+----------------------------------------
 
 This project uses AdaBoost classifiers to detect pedestrians in still images.
 A two-stage approach is adopted for acceleration - a simple first-stage 
@@ -11,35 +12,35 @@ first and second stage classifiers are 100 and 2,000 respectively.
 
 
 License
-========================================
+----------------------------------------
 for research use only
 
 
 Requirements
-========================================
+----------------------------------------
 1. OpenCV 2.4.9
 2. build-essential
 
 
 OS
-========================================
+----------------------------------------
 Ubuntu 14.04 LTS
 
 
 Pre-trained models
-========================================
+----------------------------------------
 1. first-stage: model/boost_weak100_pos23266_neg15624_icf780_obj80x160_cell12_12_4_1.xml
-2. second-stage: model/boost_weak2000_pos23266_neg15624_icf9240_obj80x160_cell12_16_4_2.xml";
+2. second-stage: model/boost_weak2000_pos23266_neg15624_icf9240_obj80x160_cell12_16_4_2.xml;
 
 
 Build the library
-========================================
+----------------------------------------
 1. navigate into project root directory
 2. run the command 'make' to build libpedetect.a (located in project_dir/lib/)
 
 
 Build and Run the sample pedestrian detection program
-========================================
+----------------------------------------
 1. navigate into sample/detection/
 2. run 'build.sh'
 3. run './detect_image'
